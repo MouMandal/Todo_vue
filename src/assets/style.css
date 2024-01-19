@@ -1,0 +1,113 @@
+/*BODY*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: rgb(255, 99, 71);
+}
+
+.container {
+    margin-top: 100px;
+    width: 35vw;
+    height: 70vh;
+    box-shadow: 2px 2px 8px 8px black;
+    border-radius: 30px;
+    background: url(first.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*HEADER*/
+h1 {
+    text-align: center;
+    padding-top: 12px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.998);
+
+}
+
+/*TEXT*/
+.text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+.text input {
+    width: 65%;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+}
+
+.text input[type="text"] {
+    border: none;
+    color: red;
+    outline: none;
+    height: 40px;
+    cursor: pointer;
+    padding-left: 4px;
+    font-size: 15px;
+}
+
+button {
+    padding: 2.5% 6%;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+/*DATA*/
+.data div {
+    height: 11%;
+    width: 85%;
+    background-color: black;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px black;
+    padding: 0px 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+button.delete_btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+button.delete_btn:hover {
+    color: red;
+}
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width:1080px) {
+    .data div {
+        margin-left: 20px;
+    }
+    .container {
+        width:fit-content;
+    }
+}
